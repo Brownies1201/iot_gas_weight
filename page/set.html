@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Set</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+
+	<!-- jQuery css and js -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />		
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<!-- Bootstrap css and js -->
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" >
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" >
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="../lib/animate.css">
+
+	<!--main-->
+	<link  rel= "stylesheet"  href= "../css/set.css" >
+	<script src="../js/set.js"></script>
+</head>
+<body class="animated fadeIn">
+	<div class="row set_row_menu">
+		<!--menu-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		    	<!--mobile btn-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--logo-->
+				<a class="navbar-brand" href="../index.html">
+					<img class="home_logo" src="../img/logo.png">
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<!--menu content-->
+				<ul class="nav navbar-nav">
+					<li><a href="chart.html"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>使用量表</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="search.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>尋找瓦斯行</a></li>
+				</ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<!--form-->
+	<div class="row set_row">
+		<div class="col-sm-offset-4 col-sm-4">
+			<div class="form-horizontal">
+				<!--input-->
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">店名</label>
+					<div class="col-sm-10">
+					  <input class="form-control" id="set_shop_name" placeholder="請輸入店名">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-2 control-label">地址</label>
+					<div class="col-sm-10">
+					  <input class="form-control" id="set_shop_address" placeholder="請輸入地址">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-2 control-label">電話</label>
+					<div class="col-sm-10">
+					  <input class="form-control" id="set_shop_phone" placeholder="請輸入電話">
+					</div>
+				</div>
+				<!--btn alert msg-->
+				<div class="form-group">
+					<div class="set_alert_msg col-sm-offset-2"></div>
+				</div>
+				<!--btn group-->
+				<div class="form-group">
+					<div class="col-xs-offset-2 col-xs-4" id="set_btn_group">
+						<button class="btn btn-info btn-block" id="set_shop_change_btn">更改資料</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-block" id="set_shop_phone_btn">打電話</button>
+					</div>
+					<div class="col-xs-3">
+						<button class="btn btn-primary btn-block" id="set_shop_map_btn">定位</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

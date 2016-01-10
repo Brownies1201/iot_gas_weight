@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft JhengHei";
+}
+#map {
+  height: 100%;
+  visibility: hidden;
+}
+.marker_info{
+  line-height: normal;
+  font-family: "Microsoft JhengHei";
+  padding:0px;   
+  margin:0px;
+}
+.home_logo{
+  width: 130px;
+  margin-top: -10px;
+}
+.set_row_menu nav{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.set_row_menu{
+	z-index: 9999;
+}
+.set_search_form{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+.set_search{
+	padding-top: 10px;
+}
+.right-panel-row{
+	position: absolute;
+	z-index: 2;
+	padding: 20px;
+	height: auto;
+	width: auto;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+}
+#close_right_panel{
+	text-align: right;
+}

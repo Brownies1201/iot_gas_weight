@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+
+	<!-- jQuery css and js -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />    
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<!-- Bootstrap css and js -->
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" >
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" >
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0-RC1/js/bootstrap-datepicker.min.js"></script>
+
+	<!--awesome icon-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="../lib/animate.css">
+
+	<!--main-->
+	<link  rel= "stylesheet"  href= "../css/set_get_direction.css" >
+	<script src="../js/set_get_direction.js"></script>
+	
+	<!--google map api-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPSBgZtmXgcikqicxXJNEkJ-cDPStBr7Q&signed_in=true&libraries=places&callback=initMap" async defer></script>
+
+	
+</head>
+<body class="animated fadeIn">
+	<div class="row set_row_menu">
+		<!--menu-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		    	<!--mobile btn-->
+				<button type="button" class="navbar-toggle collapsed"  id="mobile_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--logo-->
+				<a class="navbar-brand" href="../index.html">
+					<img class="home_logo" src="../img/logo.png">
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<!--menu content-->
+				<ul class="nav navbar-nav">
+					<li><a href="chart.html"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>使用量表</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="search.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>尋找瓦斯行</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="set.html"><span class="fa fa-cog" aria-hidden="true"></span>設定/連絡瓦斯行</a></li>
+				</ul>
+				 <!--chart time select-->
+				<div class="chart_form form-inline set_search_form" role="search">
+					<!--start and destination input-->
+					<div class="chart_form form-inline chart_form" role="search">
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon">起點</span>
+							    <input type="text" class="form-control" id="start_input"> 
+							    <span class="input-group-addon">終點</span> 
+							    <input type="text" class="form-control" id="dest_input">
+							</div>
+						</div>
+						<!--direction btn-->
+						<button class="btn btn-info" id="find_direction"><span class="fa fa-location-arrow"></span></button>
+						<!--show the route-->
+						<button class="btn btn-primary" id="open_panel">顯示導航</button>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<!--direction panel-->
+	<div class="right-panel-row">
+		<div id="right-panel"></div>
+		<div id="close_right_panel">
+			<button class="btn btn-danger" id="close_panel"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>關閉導航</button>
+		</div>
+	</div>
+	<!--map-->
+	<div id="map"></div>
+</body>
+</html>

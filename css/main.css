@@ -1,0 +1,61 @@
+/*body initial*/
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Microsoft JhengHei";
+}
+/*a tag initial*/
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+a:visited{
+	text-decoration: none;
+	color: #000;
+}
+a:active{
+	text-decoration: none;
+	color: #000;
+}
+.home_row_menu{
+	height: 5vh;
+}
+.home_row_title{
+	padding-top: 10px;
+	height: 5vh;
+	background: #DDD;
+}
+.home_row_button{
+	height: 45vh;
+	background: #FFF;
+}
+.home_logo{
+	width: 130px;
+	margin-top: -10px;
+}
+.home_button{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+.home_img_chart{
+	height: 20vh;
+	padding-bottom: 5px;
+}
+.home_img_marker{
+	height: 17vh;
+	margin-top: 15px;
+	padding-bottom: 5px;
+}
+.home_row_alert{
+	text-align: center;
+	visibility: hidden;
+}

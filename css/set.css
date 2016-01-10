@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Microsoft JhengHei";
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+a:visited{
+	text-decoration: none;
+	color: #000;
+}
+a:active{
+	text-decoration: none;
+	color: #000;
+}
+.set_row{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.chart_datepicker{
+	padding-bottom: 5px;
+}
+.home_logo{
+	width: 130px;
+	margin-top: -10px;
+}
+.chart_form{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+.set_alert_msg{
+	color: #ff6666;
+	padding-left: 15px;
+}
+.map_row{
+	position: absolute;
+	z-index: 999;
+}
+#map {
+	height: 100%;
+}
+.btn{
+	text-align: center;
+}

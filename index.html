@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GasWeight</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+
+	<!-- jQuery css and js -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />		
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<!-- Bootstrap css and js -->
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" >
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" >
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="lib/animate.css">
+
+	<!--main-->
+	<link  rel= "stylesheet"  href= "css/main.css" >
+	<script src="js/main.js"></script>
+</head>
+<body class="animated fadeIn">
+	<div class="row home_row_menu">
+		<!--menu-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+				<!--logo-->
+				<a class="navbar-brand" href="index.html">
+					<img class="home_logo" src="img/logo.png">
+				</a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<div class="row home_row_empty">
+	</div>
+	<!--Gas alert message-->
+	<div class="row home_row_alert">
+		<div class="alert alert-danger" role="alert">
+		  <strong class="alert-link">瓦斯容量低於120g，是否要聯絡瓦斯行?</strong>
+		  <button type="button" class="btn btn-danger home_gas_contact_btn" data-toggle="modal">瓦斯行</button>
+		</div>
+	</div>
+	<!--menu button-->
+	<div class="row home_row_button">
+	  	<div class="col-xs-6 home_button">
+	  		<a href="page/chart.html">
+		  		<img class="home_img_chart" src="img/chart_icon.png"/>
+		  		<br>
+		  		使用量表
+	  		</a>
+	 	</div>
+	 	<div class="col-xs-6 home_button">
+	  		<a href="page/search.html">
+		  		<img class="home_img_marker" src="img/marker_icon.png"/>
+		  		<br>
+		  		尋找瓦斯行
+	  		</a>
+	 	</div>
+	</div>
+	<div class="row home_row_button">
+	  	<div class="col-xs-12 home_button">
+	  		<a href="page/set.html">
+		  		<img class="home_img_chart" src="img/phone_icon.png"/>
+		  		<br>
+		  		設定/連絡瓦斯行
+	  		</a>
+	 	</div>
+	</div>
+	<!-- Alert modal -->
+	<div class="modal fade" id="home_alert_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">沒有設定電話</h4>
+				</div>
+				<div class="modal-body">
+					目前沒有設定電話，是否要設定？
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">不需要</button>
+					<button type="button" class="btn btn-primary" id="home_alert_set_btn">我需要</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

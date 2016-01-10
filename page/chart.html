@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Highcharts</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+
+	<!-- jQuery css and js -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />		
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<!--include the highcharts library-->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	<!-- Bootstrap css and js -->
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" >
+	<link  rel= "stylesheet"  href= "http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" >
+	<link  rel= "stylesheet"  href= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0-RC1/css/bootstrap-datepicker.min.css" >
+	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0-RC1/js/bootstrap-datepicker.min.js"></script>
+
+	<!--awesome icon-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="../lib/animate.css">
+
+	<!--main-->
+	<link  rel= "stylesheet"  href= "../css/chart.css" >
+	<script src="../js/chart.js"></script>
+</head>
+<style>
+
+</style>
+<body class="animated fadeIn">
+	<div class="row chart_row_menu">
+		<!--menu-->
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		    	<!--mobile btn-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--logo-->
+				<a class="navbar-brand" href="../index.html">
+					<img class="home_logo" src="../img/logo.png">
+				</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<!--menu content-->
+				<ul class="nav navbar-nav">
+					<li><a href="search.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>尋找瓦斯行</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="set.html"><span class="fa fa-cog" aria-hidden="true"></span>設定/連絡瓦斯行</a></li>
+				</ul>
+				<!--chart time select-->
+				<div class="chart_form form-inline chart_form" role="search">
+					<div class="form-group">
+						<div class="input-group input-daterange">
+						    <input type="text" class="form-control datepicker1">
+						    <span class="input-group-addon">~</span>
+						    <input type="text" class="form-control datepicker2">
+						</div>
+					</div>
+					<button class="btn btn-info datepicker_btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				</div>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	<div class="row chart_row_range">
+		<div class="col-sm-12">
+			<div id="container"></div>
+		</div>
+	</div>
+</body>
+</html>
