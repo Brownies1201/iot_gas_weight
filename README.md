@@ -13,7 +13,7 @@
 4. 5KG scales sensor *1
 5. WIFI-ESP8266 *1
 6. 5V to 3V stabilizer(LM-1117) *1
-7. dupont lines(F/F), (F/M)
+7. dupont lines(M/M), (F/M)
 
 
 ## Database design
