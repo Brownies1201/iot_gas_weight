@@ -38,7 +38,7 @@ $my_db =  "wifidb";
 ```
 3. Arduino setting
 ```javascript
- //connect
+//connect
 String SID = "";//wifi name
 String PWD = "";//wifi password
 String IP = "";//IP
