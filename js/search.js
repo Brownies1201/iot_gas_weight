@@ -73,7 +73,7 @@ function initMap() {
 function performSearch() {
   //key word set
   var request = {
-  bounds: map.getBounds(),
+    bounds: map.getBounds(),
     keyword: '瓦斯'
   };
   //search
@@ -85,8 +85,8 @@ function performSearch() {
 //map status callback
 function callback(results, status) {
   if (status !== google.maps.places.PlacesServiceStatus.OK) {
-  console.error(status);
-  return;
+    console.error(status);
+    return;
   }
   //add key word result markers
   for (var i = 0, result; result = results[i]; i++) {
